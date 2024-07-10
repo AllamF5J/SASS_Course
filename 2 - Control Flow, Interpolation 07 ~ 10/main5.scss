@@ -1,0 +1,11 @@
+// SASS Code
+$number: 10;
+
+.box {
+  @if $number >= 9 {
+    background-color: #EEE;
+    @if $number == 10 {
+      text-align: center;
+    }
+  }
+}
