@@ -1,0 +1,13 @@
+$names:
+  "books" 20px red 18,
+  "games" 30px green 18,
+  "dvds" 20px blue;
+
+@each $name, $padd, $borderColor, $fontSize in $names {
+  .#{$name} {
+    padding: $padd;
+    font-size: if($fontSize, $fontSize * 1px, 16px);
+    border-bottom: 2px solid $borderColor;
+    color: #444;
+  }
+}
