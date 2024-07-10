@@ -1,0 +1,22 @@
+// ! Method One
+.class > .child {
+  padding: 10px;
+}
+
+// ! Method Two
+.class > {
+  .child {
+    padding: 10px;
+  }
+}
+
+// ! Method Three
+%base-padding {
+  padding: 10px;
+}
+
+.class {
+  > .child {
+    @extend %base-padding;
+  }
+}
