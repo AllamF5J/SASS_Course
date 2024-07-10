@@ -1,0 +1,13 @@
+// * Main SCSS File
+
+// ! Import Helpers
+/*
+  Using @use ... as *, you can call variables and functions without needing the namespace. 
+  This makes the code more concise and resembles what you did with @import, but with the benefits of @use in managing namespaces.
+*/
+@use './Helpers/vars' as *;
+@use './Helpers/functions' as *;
+
+// ! Import Layout
+@use './Layout/header';
+@use './Layout/footer';
