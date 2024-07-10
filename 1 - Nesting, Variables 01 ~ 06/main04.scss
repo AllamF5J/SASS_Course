@@ -1,0 +1,10 @@
+// Target the .sibling element that is immediately following a .parent element 
+.parent + .sibling {
+  margin: auto;          // Center the element horizontally
+  margin-top: 10px;      // Add a top margin of 10px
+}
+
+// Target the .last element that follows any .sibling element which is immediately following a .parent element
+.parent + .sibling ~ .last {
+  padding: 10px;         // Add padding of 10px to the element
+}
