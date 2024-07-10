@@ -1,0 +1,19 @@
+// ! Method One.
+
+// * Global Variables.
+$fontSizing: 20px;
+$fontWight: bold;
+
+.class {
+  font-weight: $fontWight;
+  font-size: $fontSizing
+}
+
+// ! Method Two 
+
+.class {
+  font: {
+    weight: bold;
+    size: 20px
+  }
+}
