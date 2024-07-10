@@ -1,0 +1,21 @@
+// ! Global Variables...
+$small-mobile-width: 'max-width: 575px';
+
+.box {
+  h2 {
+    font-size: 20px;
+
+    @media ($small-mobile-width) {
+      & {
+        font-size: 16px;
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  p {
+    @extend h2;
+  }
+}
