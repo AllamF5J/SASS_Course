@@ -1,0 +1,11 @@
+// SASS Code
+$number: 10;
+$color: red;
+$theme: light;
+
+// Write If Condition Code Here
+.class {
+  @if $number > 5 && $color == "red" && $theme != "dark" {color: red;}
+}
+
+// ! You Can Replace '&&' => 'and', And Can Replace '!=' => 'and not'
