@@ -1,0 +1,25 @@
+// Mixin definition
+@mixin placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+// Using the Mixin
+textarea {
+  @include placeholder {
+    color: #777;
+  }
+}
